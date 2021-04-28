@@ -32,7 +32,7 @@ export async function signApkFile(
         '-v', '4',
         apkFile
     ]);
-    
+    core.debug(`now copy`);
     await exec.exec(`"copy"`, [
         apkFile,
         alignedApkFile
